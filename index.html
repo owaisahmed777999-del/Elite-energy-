@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="1gTkHF7QaD1NEx0LhllHOFhB7dcaj8Cv0xGS7vch7kI" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Energy | Industrial Power Experts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #000; color: #fff; font-family: 'Montserrat', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+
+        /* --- HEADER: Guaranteed Spacing --- */
+        header {
+            background-color: #000;
+            width: 100%;
+            height: 110px;
+            padding: 0 5%;
+            border-bottom: 5px solid #ffcc00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        /* Contact Section Fix */
+.contact {
+    padding: 80px 8%;
+    background-color: #000;
+    color: #fff;
+    clear: both; /* Taake upar wala koi element is mein na ghusay */
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form aur Info ko barabar karne ke liye */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap; /* Mobile par automatic niche aa jayega */
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.wa-btn {
+    background-color: #25d366;
+    color: white;
+}
+
+.mail-btn {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.contact-btn:hover {
+    transform: translateY(-5px);
+    opacity: 0.9;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.detail-box h3 {
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Button fix */
+.btn-elite {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+} 
+        .logo-box { display: flex; align-items: center; flex-shrink: 0; }
+        .logo-box img { height: 65px; width: auto; margin-right: 15px; }
+        .logo-box h1 { font-family: 'Oswald', sans-serif; font-size: 26px; text-transform: uppercase; }
+        .logo-box h1 span { color: #ffcc00; }
+
+        /* Navigation: Perfect Gap */
+        nav ul { list-style: none; display: flex; align-items: center; }
+        nav ul li { margin-left: 40px; } /* Fixed gap between links */
+        nav ul li a { 
+            text-decoration: none; color: #fff; font-weight: 700; 
+            white-space: nowrap; 
+        }
+        nav ul li a:hover { color: #ffcc00; }
+
+       /* --- HERO SECTION --- */
+.hero {
+    height: 75vh;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.3) 100%),  url('images/logo.jpg.jfif')
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+        .hero-content h2 { font-size: clamp(35px, 7vw, 70px); font-weight: 900; line-height: 0.9; margin-bottom: 25px; text-transform: uppercase; }
+        .hero-content h2 span { color: #ffcc00; }
+        .btn-elite { background: #ffcc00; color: #000; padding: 18px 45px; font-weight: 900; text-decoration: none; text-transform: uppercase; display: inline-block; transition: 0.3s; }
+        .btn-elite:hover { background: #fff; transform: translateY(-3px); }
+.service-img {
+    width: 100%;       /* Card ki poori width le legi */
+    height: 200px;     /* Sab images ki height ek jaisi rakho */
+    object-fit: cover; /* Image kategi nahi, balkay frame mein fit ho jayegi */
+    border-radius: 8px 8px 0 0; /* Sirf upar ke corners round honge */
+    margin-bottom: 15px;
+}
+
+.s-card {
+    padding: 0;        
+    overflow: hidden;  /* Taake image corners se bahar na nikle */
+    background: #1a1a1a;
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* Card ke text ko wapis padding dene ke liye */
+.s-card h3, .s-card p {
+    padding: 0 15px;
+}
+.s-card p {
+    padding-bottom: 20px;
+}
+        /* --- YELLOW BAR: Fixed Gaps --- */
+        .yellow-bar {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 50px 8%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .yellow-bar h2 { font-size: 28px; font-weight: 900; text-transform: uppercase; flex: 1; min-width: 280px; }
+        .stats-container { display: flex; flex: 2; justify-content: space-around; min-width: 350px; gap: 20px; }
+        .stat-item { text-align: center; }
+        .stat-item h3 { font-size: 42px; font-weight: 900; line-height: 1; }
+        .stat-item p { text-transform: uppercase; font-weight: 800; font-size: 11px; margin-top: 5px; }
+
+        /* --- SERVICES --- */
+        .services { padding: 90px 8%; background: #0a0a0a; text-align: center; }
+        .services h2 { font-family: 'Oswald'; font-size: 40px; margin-bottom: 50px; text-transform: uppercase; }
+        .s-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .s-card { background: #111; padding: 40px; border-left: 4px solid #ffcc00; text-align: left; transition: 0.3s; }
+        .s-card:hover { background: #1a1a1a; transform: translateY(-5px); }
+        .s-card h3 { color: #ffcc00; margin-bottom: 15px; font-size: 22px; text-transform: uppercase; }
+        .s-card p { color: #888; font-size: 14px; line-height: 1.6; }
+
+        /* --- FAQ SECTION: NEW --- */
+        .faq-section { padding: 90px 8%; background: #000; }
+        .faq-head { text-align: center; margin-bottom: 50px; }
+        .faq-head h2 { font-family: 'Oswald'; font-size: 40px; text-transform: uppercase; color: #ffcc00; }
+        .faq-container { max-width: 900px; margin: 0 auto; }
+        .faq-item { background: #111; margin-bottom: 20px; padding: 30px; border-left: 5px solid #ffcc00; }
+        .faq-item h4 { font-size: 20px; font-weight: 700; margin-bottom: 10px; color: #fff; }
+        .faq-item p { color: #aaa; font-size: 15px; line-height: 1.6; }
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp-float img { width: 35px; }
+        /* --- FOOTER --- */
+        footer { padding: 60px 8%; background: #000; text-align: center; border-top: 1px solid #222; }
+        .footer-logo img { height: 60px; filter: grayscale(1); margin-bottom: 20px; opacity: 0.5; }
+        .copy { color: #444; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; }
+        /* FAQ Section */
+    .faq-head h2 { font-size: 30px; }
+    .faq-item { padding: 20px; }
+    @media (max-width: 768px) {
+    /* Menu ko center aur gaps dene ke liye */
+    nav ul {
+        display: flex !important;
+        flex-direction: row !important; 
+        flex-wrap: wrap !important;   
+        justify-content: center !important;
+        gap: 15px !important;          
+        padding: 0 !important;
+    }
+
+    nav ul li {
+        margin-left: 0 !important;     /* Purana desktop wala margin khatam */
+        margin-right: 0 !important;
+    }
+
+    nav ul li a {
+        font-size: 13px !important;    /* Mobile par thora chota text */
+        white-space: nowrap !important; /* Link tootay nahi */
+    }
+}
+
+    /* Hero Text size fix */
+    .hero-content h2 {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+    }
+}    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.jpg.jfif" alt="Logo">
+            <h1>ELITE<span>ENERGY.PK</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#trust-section">Industrial</a></li>
+                <li><a href="#service-section">services</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Lighting<br><span>your future in the right way</span></h2>
+            <p style="margin-bottom: 35px; color: #ccc; max-width: 550px;">Precision engineering and high-voltage solutions for Pakistan's heavy industries.</p>
+            <a href="#" class="btn-elite">Start Project</a>
+        </div>
+    </section>
+
+    <section class="yellow-bar" id="trust-section">
+        <h2>Why Industrialists Trust Us?</h2>
+        <div class="stats-container">
+            <div class="stat-item"><h3>1500+</h3><p>Projects</p></div>
+            
+            <div class="stat-item"><h3>100%</h3><p>Safety</p></div>
+            <div class="stat-item"><h3>15yr</h3><p>Experience</p></div>
+        </div>
+    </section>
+    
+    <section class="services" id="service-section">
+        <h2>Our Core Services</h2>
+        <div class="s-grid">
+            <div class="s-card">
+      <div class="s-card">
+        <img src="images/imgp.jpg" alt="Water Pump Service" class="service-img">
+    <h3>House Wiring</h3>
+    <p>Complete electrical wiring for new houses and apartments with safety and load management.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/imgb.jpg" alt="Water Pump Service" class="service-img">
+    <h3>Fan & Light Setup</h3>
+    <p>Professional installation of ceiling fans, bracket fans, chandeliers, and all types of LED lighting.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/img4.jpg" alt="Water Pump Service" class="service-img">
+    <h3>AC Services</h3>
+    <p>Installation, gas refilling, and master cleaning of split and window AC units for better cooling.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/img5.jpg" alt="Water Pump Service" class="service-img">
+    <h3>DB Box Repair</h3>
+    <p>Fixing tripping issues, replacing faulty breakers, and organizing messy distribution boards.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/img6.jpg" alt="Water Pump Service" class="service-img">
+    <h3>UPS Installation</h3>
+    <p>Setup and maintenance of home UPS systems and battery banks for backup power.</p>
+</div>
+<div class="s-card">
+    <img src="images/img1.png" alt="Water Pump Service" class="service-img">
+    
+    <h3>Water Pump Service</h3>
+    <p>Repairing and installing automatic water pump controllers and motor starters.</p>
+</div>
+<div class="s-card">
+    <img src="images/img2.png" alt="Water Pump Service" class="service-img">
+    <h3>Switch & Socket Fix</h3>
+    <p>Quick replacement of burnt or broken switches, power plugs, and multi-sockets.</p>
+    <br>
+</div>
+
+<div class="s-card">
+    <img src="images/img9.jpg" alt="Water Pump Service" class="service-img">
+    <h3>Geyser Maintenance</h3>
+    <p>Installation and heating element replacement for electric and instant water heaters.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/img7.jpg" alt="Water Pump Service" class="service-img">
+    <h3>Fault Finding</h3>
+    <p>Expertise in finding and fixing hidden short circuits that cause high electricity bills.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/img8.jpg" alt="Water Pump Service" class="service-img">
+    <h3>Intercom Systems</h3>
+    <p>Installation of digital doorbells, intercoms, and basic security camera setups.</p>
+</div>
+<div class="s-card">
+    <img src="images/img10.jpg" alt="Water Pump Service" class="service-img">
+    <h3>Solar Maintenance</h3>
+    <p>Professional cleaning of solar plates and checking battery health for maximum efficiency.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/img11.jpg" alt="Water Pump Service" class="service-img">
+    <h3>Generator Service</h3>
+    <p>Routine tuning, oil change, and filter replacement for portable home generators.</p>
+</div>
+
+<div class="s-card">
+    <img src="images/images12.jpg" alt="Water Pump Service" class="service-img">
+    <h3>Auto Water Switch</h3>
+    <p>Installation of automatic sensors that turn the water motor on/off based on tank levels.</p>
+</div>
+
+<div class="s-card">
+    
+    <h3>Exhaust & Hoods</h3>
+    <p>Mounting and electrical connection of kitchen hoods and heavy-duty exhaust fans.</p>
+</div>
+
+<div class="s-card">
+    <h3>Decorative Lighting</h3>
+    <p>Installation of LED strips, rope lights, and concealed lights in false ceilings or cabinets.</p>
+</div>
+
+<div class="s-card">
+    <h3>Appliance Repair</h3>
+    <p>Fixing electrical faults, motor capacitors, and wiring of washing machines and dryers.</p>
+</div>
+
+<div class="s-card">
+    <h3>Microwave Fix</h3>
+    <p>Basic electrical repair of microwave ovens, including fuse and heater replacements.</p>
+</div>
+
+<div class="s-card">
+    <h3>Security Cameras</h3>
+    <p>Setting up basic 4-channel or 8-channel CCTV systems for homes and small shops.</p>
+</div>
+
+<div class="s-card">
+   
+    <h3>Electric Fencing</h3>
+    <p>Basic checking and repair of energizers and wires for home security electric fences.</p>
+</div>
+
+<div class="s-card">
+    <h3>Smart Switches</h3>
+    <p>Replacing old switches with Wi-Fi enabled smart switches to control lights via mobile.</p>
+</div>
+<div class="s-card">
+    <h3>Residential Solar</h3>
+    <p>Complete installation of on-grid and hybrid solar systems for houses to cut down monthly bills.</p>
+</div>
+
+<div class="s-card">
+    <h3>Solar Battery Bank</h3>
+    <p>Professional setup of Lithium and Tubular battery banks for 24/7 solar backup during load shedding.</p>
+</div>
+
+<div class="s-card">
+    <h3>L2/L3 Solar Structures</h3>
+    <p>Custom fabrication and installation of heavy-duty galvanized iron (GI) stands for rooftop solar panels.</p>
+</div>
+
+<div class="s-card">
+    <h3>Net Metering Setup</h3>
+    <p>Complete technical assistance for green meter installation to sell excess electricity back to the grid.</p>
+</div>
+
+
+<div class="s-card">
+    <h3>Inverter Programming</h3>
+    <p>Expert configuration of hybrid and off-grid inverters (Growatt, Inverex, Tesla) for maximum efficiency.</p>
+</div>
+<div class="s-card">
+    <h3>Professional Cleaning</h3>
+    <p>Removing dust and bird droppings using specialized soft brushes to increase efficiency by 30%.</p>
+</div>
+
+<div class="s-card">
+    <h3>Solar Grounding</h3>
+    <p>Protecting your expensive solar plates and inverter from lightning strikes and short circuits.</p>
+</div>
+
+<div class="s-card">
+    <h3>Inverter Repair</h3>
+    <p>Fixing common fault codes (F52, F08) and hardware issues in hybrid and off-grid solar inverters.</p>
+</div>
+
+<div class="s-card">
+    <h3>DC Cable Management</h3>
+    <p>Replacing thin cables with high-quality 6mm/10mm DC wires to prevent heat loss and fire risks.</p>
+</div>
+
+<div class="s-card">
+    <h3>Solar Performance Audit</h3>
+    <p>Using multimeters and clamps to check if every panel is producing the required voltage and current.</p>
+</div>
+
+<div class="s-card">
+    <h3>Smart Load Shifting</h3>
+    <p>Configuring your system to run heavy loads (AC/Pump) during peak sun hours to save battery life.</p>
+</div>
+
+<div class="s-card">
+    <h3>Connector Services</h3>
+    <p>Replacing burnt or loose MC4 connectors to ensure water-proof and spark-free connections.</p>
+</div>
+
+<div class="s-card">
+    <h3>Solar Tube-well Fix</h3>
+    <p>Installing VFDs and solar power systems for agricultural or home water pumping needs.</p>
+</div>
+
+<div class="s-card">
+    <h3>Battery Maintenance</h3>
+    <p>Regular gravity checks and distilled water topping for tubular batteries to extend their life.</p>
+</div>
+
+<div class="s-card">
+    <h3>Pre-Install Survey</h3>
+    <p>Using shadow analysis tools to find the best rooftop location for maximum sun exposure.</p>
+</div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-head">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h4>Are you PEC certified?</h4>
+                <p>Yes, we are a fully registered firm with the Pakistan Engineering Council, specializing in high-voltage industrial projects.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Do you provide maintenance services?</h4>
+                <p>We offer 24/7 emergency support and scheduled maintenance for all industrial electrical systems across Pakistan.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What is the typical project timeline?</h4>
+                <p>Timelines depend on the scale of the project, but we pride ourselves on rapid deployment to minimize industrial downtime.</p>
+            </div>
+        </div>
+    </section><section class="contact" id="contact-section">
+    <div class="contact-container">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Expert electrical and industrial solutions are just a click away.</p>
+        
+        <div class="contact-actions">
+            <a href="https://wa.me/923112974518" class="contact-btn wa-btn" target="_blank">
+                Contact via WhatsApp
+            </a>
+            
+            <a href="mailto:eliteenergy.pk@gmail.com" class="contact-btn mail-btn">
+                Send us an Email
+            </a>
+        </div>
+
+        <div class="contact-details">
+            <div class="detail-box">
+                <h3>Location</h3>
+                <p>Karachi, Pakistan</p>
+            </div>
+            <br>
+            <div class="detail-box">
+                <h3>Availability</h3>
+                <p>24/7 Emergency Services</p>
+            </div>
+        </div>
+    </div>
+</section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<a href="https://wa.me/923112974518" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.jpg.jfif" alt="Elite Energy">
+        </div>
+        <div>        <p class="copy">&copy; 2026 Elite Energy Pakistan. All Rights Reserved.</p></div>
+              
+    </footer>
+
+</body>
+</html>
